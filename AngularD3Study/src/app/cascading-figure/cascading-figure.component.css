@@ -1,0 +1,50 @@
+#svgContainer {
+  width: 100%;
+  height: 100%;
+}
+
+.every {
+  width: 400px;
+  height: 425px;
+  margin: 15px;
+  float: left;
+}
+
+h3 {
+  margin: 0;
+}
+
+.button {
+  float: right;
+  margin-right: 20px;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 2px 8px;
+  border: 1px solid #ccc;
+  background: yellowgreen;
+  border-radius: 4px;
+}
+
+:hover {
+  background: violet;
+}
+
+.svg {
+  width: 400px;
+  height: 400px;
+}
+
+折线动画.line {
+  stroke-dasharray: 700; /* //设置虚线的间隔长度 */
+  stroke-dashoffset: 700; /* 设置线段偏移长度 */
+  animation: dash 2s forwards;
+}
+
+@keyframes dash {
+  0% {
+    stroke-dashoffset: 700;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
